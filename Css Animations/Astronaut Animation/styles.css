@@ -56,6 +56,13 @@
   position: absolute;
   top: 1.25em;
   right: 1.25em;
+  animation: rotate 300s infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .planet::before {
@@ -93,6 +100,7 @@
   position: absolute;
   bottom: 0.625em;
   right: 0.625em;
+  animation: unset;
 }
 
 .astronaut {
@@ -200,7 +208,13 @@
   width: 1.875em;
   background-color: #e2e9f4;
   border-radius: 1.25em;
-  top: -0.25em;
+  top: 0;
+  animation: float-hand 8s infinite;
+}
+@keyframes float-hand {
+  50% {
+    transform: rotateY(10deg);
+  }
 }
 
 .hand-l {
@@ -259,7 +273,7 @@
   height: 1em;
   width: 2.8125em;
   background-color: #e2e9f4;
-  top: 2.8125em;
+  top: 2.9125em;
 }
 
 .leg-l {
